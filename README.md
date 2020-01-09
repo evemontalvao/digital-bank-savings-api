@@ -1,6 +1,6 @@
 # Digital Bank Savings API
 
-This is the NuConta Savings' API. I chose to use serverless because of it's simplicity and cost.
+This is the Digital Bank Savings' API. I chose to use serverless because of it's simplicity and cost.
 
 ## Instruction to run server locally
 
