@@ -1,0 +1,21 @@
+service:
+  name: nubank-savings
+provider:
+  name: aws
+  runtime: nodejs8.10
+  memorySize: 512
+  timeout: 10
+functions:
+  NuContaSavings:
+    handler: savings.handler
+    events:
+      - http:
+          path: savings
+          method: POST
+          cors:
+            origin: '*'
+      - schedule:
+          name: keep-NuContaSavings-warmed
+          rate: rate(10 minutes)
+plugins:
+  - serverless-offline

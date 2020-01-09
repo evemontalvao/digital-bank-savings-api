@@ -1,0 +1,30 @@
+{
+  "name": "nubank-challenge",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "./node_modules/.bin/jest",
+    "start": "serverless offline --port 2107"
+  },
+  "standard": {
+    "env": {
+      "commonjs": true,
+      "node": true,
+      "jest": true
+    }
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^3.2.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-jest": "^23.0.2",
+    "jest": "^24.9.0",
+    "serverless-offline": "^5.12.0",
+    "standard": "^14.3.1",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "serverless": "^1.56.1"
+  }
+}
